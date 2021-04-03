@@ -1,0 +1,14 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),Web Servers,Amazon EC2,0,3522,42264,USD,"Operating system (Linux), Quantity (6), Pricing strategy (On-Demand Instances 1 Year No Upfront), Storage amount (30 GB), Instance type (m4.4xlarge)"
+My Estimate,US East (N. Virginia),Application Servers,Amazon EC2,0,3381.84,40582.08,USD,"Operating system (Linux), Quantity (6), Pricing strategy (On-Demand Instances 1 Year No Upfront), Storage amount (30 GB), Instance type (m5.4xlarge)"
+My Estimate,US East (N. Virginia),NAT Gateways,Amazon Virtual Private Cloud (VPC),0,3350.7,40208.4,USD,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),CloudFront Origin,S3 Standard,0,7.68,92.16,USD,S3 Standard storage (5 GB per month)
+My Estimate,US East (N. Virginia),CloudFront Origin,Data Transfer,0,0,0,USD,
+My Estimate,US East (N. Virginia),Load Balancer,Application Load Balancer,0,1200.85,14410.2,USD,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),MasterDB and Read Replica,Amazon RDS for MySQL,0,7575.719999999999,90908.64,USD,"Storage for each RDS instance (Provisioned IOPS SSD (io1)), Storage amount (100 GB), Provisioning IOPS (20000), Quantity (2), Instance type (db.m6g.8xlarge), Deployment option (Single-AZ), Pricing strategy (OnDemand)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+Rationale for changes: Our increased budget allows us to improve the performance of the application by modifying the Database class to db.m6g.8xlarge and provisioned IOPS of 20000. The number of Web Server and Application server was set to 6 for each autoscaling group. The Web Server and the Application Server classes were set to m4.4xlarge and m5.4xlarge respectively. ,,,,,,,,
